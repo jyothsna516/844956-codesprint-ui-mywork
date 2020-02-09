@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    
+    <title></title> 
+    <style>
+        fieldset{
+  width: 400px;
+   float: center;
+}
+form{
+    text-align: center;
+}
+    </style>
+</head>
+<body>
+<div class="container-fluid">
+   <h2 style="color:blue"> place gift card order page:</h2>
+    <form name="details">
+        <table>
+        <tr>    
+              <th>GiftCardAmount:</th>
+               <td><input type="text" size="2" id="t1"required>: <input type="text" size="2" min=0 max=100 id="t2"maxlength="3"required></td>
+            
+               
+            </tr>
+            <tr>
+                 <td></td>
+                 <th>INR &nbsp;&nbsp;
+                  PAISA</th></tr>
+            <tr>
+               
+                  <th>  Receipent Home:</th>
+<td><input type="text" size="10" id="t3"required></td>&nbsp; &nbsp; &nbsp;<td><input type="text" size="10" id="t4"required></td>
+           </tr>
+           <tr>
+               <td> </td>
+               <th>FirstName </th>
+               <th>LastName</th>
+            </tr>   
+        </table><br /><br />
+        <fieldset class="border 6  border-dark">
+            <legend class="w-auto"><b>Shipping Address:</b></legend>
+            <table >
+                <tr>
+                    <td><input type="text" id="t5" size="30"required></td>
+                </tr>
+                 <tr>
+<th text-align="center"> Street Address</th>
+                <tr>
+                    <td><input type="text" size="10" id="t6"required></td>&nbsp&nbsp<td><input type="text" size="10" id="t7"required></td>
+                </tr>
+<tr>
+<th> City</th>
+<th>State</th>
+</tr>
+                
+<tr>
+    <td>
+        <select id="cntry" required>
+            <option value=" ">none </option>
+            <option value="INDIA">India</option>
+            <option value="USA">USA</option>
+            <option value="UK">UK</option>
+            <option value="china">China</option>
+        </select>&nbsp&nbsp</td>
+    <td><input type="text" size="10" maxlength="6" id="t8"required></td></tr>
+    <tr>
+        <th>Country</th>
+<th>Pincode</th>
+</tr>
+  </table>      
+</fieldset>
+<table float="left">
+    <tr>
+    <th>Buyers Name:</th>
+   <td> <input type="text" size="20" id="t9"required></td> &nbsp; &nbsp;
+   <td><input type="text" size="20" id="t10"required></td></tr>
+<tr>
+    <td></td>
+<th>FirstName</th>
+<th>LastName</th>
+</tr>
+</table>
+<table float="left">
+      <tr> <th> Phone Number:</th><td><input type="text" size="2" value="+91"onkeyup="movetoNext(this, 't13')" readonly="readonly" id="t12"/>
+        <input type="text" size="1" maxlength="1"onkeyup="movetoNext(this, 't14')"requirpattern="[1-9]{1}"id="t13"/>&nbsp;
+        <input type="text" size="1" maxlength="1"onkeyup="movetoNext(this, 't15')"requirpattern="[1-9]{1}"id="t14"/>&nbsp
+        <input type="text" size="1" maxlength="1"onkeyup="movetoNext(this, 't16')"requirpattern="[1-9]{1}"id="t15"/>&nbsp
+        <input type="text" size="1" maxlength="1" onkeyup="movetoNext(this, 't17')"requirpattern="[1-9]{1}"id="t16"/>&nbsp
+        <input type="text" size="1" maxlength="1"onkeyup="movetoNext(this, 't18')"requirpattern="[1-9]{1}"id="t17" />&nbsp
+        <input type="text" size="1"maxlength="1" onkeyup="movetoNext(this, 't19')"requirpattern="[1-9]{1}"id="t18"/>&nbsp
+        <input type="text" size="1" maxlength="1"onkeyup="movetoNext(this, 't20')"requirpattern="[1-9]{1}"id="t19" />&nbsp
+        <input type="text" size="1" maxlength="1"requirpattern="[1-9]{1}"id="t20"/>&nbsp</td></tr><br/></table></br>
+        <table float="left">
+<tr>
+       <th>Email :</th><td><input type="email" size="25" id="t21" required/></td></tr></table></form></br>
+<div class="text-left">
+        
+            <button  class="btn btn-success" onclick="validate()">placeorder</button>
+            <script src="Shipping-Validation.js"></script>
+</div>
+    </form>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  
+</body>
+</html>
